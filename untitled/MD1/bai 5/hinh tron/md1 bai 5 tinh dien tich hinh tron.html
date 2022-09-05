@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích hình tròn</title>
+  <link rel="stylesheet" href="hinhtron.css">
+  <script src="hinhtronn.js"></script>
+</head>
+<body>
+<div id="warp">
+  <h2>Tính chu vi diện tích hình tròn</h2>
+  <form name="formmain">
+    <p>
+      <label> Bán kính </label>
+      <input type="number" name="radius" id="radius">
+    </p>
+    <p>
+       <label for="txtArea">Diện tích</label>
+      <input type="text" name="txtArea" id="txtArea" readonly="readonly">
+    </p>
+    <p>
+      <label for="txtPerimeter">Chu vi</label>
+      <input type="text" name="txtPerimeter" id="txtPerimeter" readonly="readonly">
+    </p>
+    <p class="buttons">
+      <input type="button" onclick="tinhDienTichVaChuVi()" value="Tính">
+    </p>
+
+  </form>
+</div>
+<script>
+  function tinhDienTichVaChuVi() {
+    let radius = document.getElementById('radius').value;
+    let iPerimeter = 2*Math.PI*radius;
+    let iArea= Math.PI*Math.pow(radius,2);
+    document.getElementById('txtArea').innerHTML = iArea;
+    document.getElementById('txtPerimeter').innerHTML=iPerimeter;
+  }
+</script>
+</body>
+</html>

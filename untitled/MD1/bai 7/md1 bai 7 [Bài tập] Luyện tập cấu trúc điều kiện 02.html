@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // Bài 1: Chuyển từ độ C sang độ F
+  // let C = Number(prompt('nhap so do C'));
+  // let F = C*9/5 + 32;
+  // document.write('so do f la ', F)
+
+
+  //----------------------------------------------------------------------------------------
+
+  // Bài 2: Chuyển từ mét sang feet:
+
+  // let a = +prompt('nhap so m');
+  // let ft= a * 3.2808;
+  // document.write('so feet la  ', ft)
+
+  // ------------------------------------------------------------------------------------------
+
+  // Bài 3: Tính diện tích hình vuông khi biết cạnh a.
+
+  // let a = +prompt('nhap chieu dai canh goc vuong');
+  // let b = a*4;
+  // document.write('dien tich hinh vuong la ', b)
+
+  // ------------------------------------------------------------------------------------------
+
+  //
+  // Bài 4: Tính diện tích hình chữ nhật khi biết 02 cạnh a, b.
+
+  // let a = +prompt('nhap chieu dai hinh chu nhat')
+  // let b = +prompt('nhap chieu rong hinh chu nhat')
+  // let c = a*b
+  // document.write('dien tich hinh chu nhat la ', c)
+
+  // ------------------------------------------------------------------------------------------
+
+  // Bài 5: Tính diện tích tam giác vuông khi biết 02 cạnh kề a, b.
+
+  // let a = +prompt('nhap do cao hinh tam giac')
+  // let b = +prompt('nhap do dai day tam giac')
+  // let c = a*b/2;
+  // document.write('dien tich tam giac la ', c)
+
+
+  // ------------------------------------------------------------------------------------------
+
+  // Bài 6: Giải phương trình bậc 1
+  //
+  // let a = Number(prompt('nhap vao a'));
+  // let b = Number(prompt('nhap vao b'));
+  // if (a==0 && b==0){
+  //   alert('phuong trinh co vo so nghiem')
+  // } if (a==0 && b!=0){
+  //     alert('phuong trinh vo nghiem')
+  // }if (a!=0 && b!=0){
+  //     let x = -b/a;
+  //     document.write('phuong trinh co nghiem la', x)
+  // }
+
+
+  // ------------------------------------------------------------------------------------------
+
+
+  // Bài 7: Giải phương trình bậc 2.
+
+  // let a = Number(prompt('nhap vao a'));
+  // let b = Number(prompt('nhap vao b'));
+  // let c = Number(prompt('nhap vao c'));
+  // let delta= Math.pow(b,2) - 4*a*c;
+  // console.log(delta)
+  // if (delta<0){
+  //     alert('phuong trinh vo nghiem')
+  // }if (delta==0){
+  //     let x = -b/ 2/a
+  //     document.write('phuong trinh co nghiem kep', x)
+  // }if (delta>0){
+  //     let x1 = (-b + Math.sqrt(delta))/ (2*a);
+  //     let x2 = (-b - Math.sqrt(delta))/ (2*a);
+  //     document.write('phuong trinh co 2 nghiem la ', + x1 + ' và ' + x2)
+  // }
+
+
+  //------------------------------------------------------------------------------------------------------
+
+  // Bài 8: Kiểm tra xem một số nhập vào có phải là tuổi của một người không. Một số nguyên là tuổi của
+  // một người khi nhỏ 120 và lớn hơn 0.
+
+  // let a = +prompt('hhap vao so tuoi');
+  // if (0<a<120){
+  //     alert('day la tuoi cua nguoi')
+  // }else
+  //     alert('day khong phai tuoi nguoi')
+
+  //------------------------------------------------------------------------------------------------------
+
+  // Bài 9: Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác. Điều kiện để
+  // a,b,c là cạnh của một tam giác là:
+
+  // let a = +prompt('nhap canh a');
+  // let b = +prompt('nhap canh b');
+  // let c = +prompt('nhap canh c');
+  // if (a > 0 && b>0 && c>0 && a+b>c && b+c>a && a+c>b){
+  //     alert('a b c la canh cua mot tam giac')
+  // }else
+  //     alert('a b c khong phai la canh cua tam giac')
+
+  //------------------------------------------------------------------------------------------------------
+
+  // Bài 10: Viết chương trình tính giá điện.
+  //
+  // let a = +prompt('nhap so dien da tieu thu')
+  // if (a<100){
+  //     let c = a*1200
+  //     document.write('so tien phai nop la: ', c)
+  // }else if (a<200){
+  //     let c = (a-100)*1500 + 120000;
+  //     document.write('so tien phai nop la: ', c)
+  // }else if(a>=200){
+  //     let c = (a-200)*2000 + 150000 + 120000;
+  //     document.write('so tien phai nop la: ', c)
+  // }
+
+
+  //------------------------------------------------------------------------------------------------------
+
+
+  // Bài 11: Viết chương trình tính thuế thu nhập cá nhân
+
+  // let a = +prompt('nhập tiền lương của bạn (đơn vị: triệu đồng) ')
+  // if (a<=10){
+  //     alert('lương không đủ ăn không cần nộp thuế thu nhập')
+  // }else if (a<=18){
+  //     let thue = a*15/100
+  //     document.write('số tiền thuế phải nộp là: ', thue)
+  // }else if (a<=32){
+  //     let thue = a*20/100;
+  //     document.write('số tiền thuế phải nộp là: ', thue)
+  // }else if (a<=52){
+  //     let thue = a*25/100;
+  //     document.write('số tiền thuế phải nộp là: ', thue)
+  // }else if (a<=80){
+  //     let thue = a*30/100
+  //     document.write('số tiền thuế phải nộp là: ', thue)
+  // }else if (a>80){
+  //     let thue = a*35/100
+  //     document.write('số tiền thuế phải nộp là: ', thue)
+  // }
+
+
+  //------------------------------------------------------------------------------------------------------
+
+
+  // Bài 12: Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lãi con) khi biết số tiền ban đầu, số tháng
+  // cho vay và lãi suất hàng tháng.
+
+  // let P = +prompt('nhap so tien can gửi (đơn vị: triệu đồng)');
+  // let n = +prompt('nhập thời gian gửi (đơn vị: năm)');
+  // let r = 0.06
+  // let A = P  * Math.pow( 1 + 0.06/12 , n*12)
+  // document.write('số tiền lãi và gốc nhận được là: ', A)
+
+</script>
+
+</body>
+</html>

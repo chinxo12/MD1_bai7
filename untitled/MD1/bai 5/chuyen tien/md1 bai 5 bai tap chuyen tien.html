@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="chuyentien.css">
+    <script src="chuyentien.js"></script>
+</head>
+<body>
+<div id="main">
+
+<script>
+    function chuyenTien() {
+     let input= document.getElementById('soTien').value;
+     let monney=document.getElementById('fromMoney').value;
+     let tranMoney=document.getElementById('toMoney').value;
+     if (monney==tranMoney){
+         document.write('result', input);
+    }else if(monney=='VND' ) {
+         let transMoney=input/23000;
+         document.write(transMoney);
+     }else {
+         let transMoney = input * 23000;
+         document.write(transMoney);
+     }
+    }
+</script>
+</div>
+
+</body>
+</html>

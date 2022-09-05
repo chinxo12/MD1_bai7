@@ -1,0 +1,17 @@
+form {
+    border: 1px solid;
+    width: 310px;
+    color: blue;
+}
+
+button {
+    width: 70px;
+    margin: 2px 1px;
+    color: blue;
+}
+#hienThi {
+   width: 270px;
+    margin-left: 23px;
+    height: 25px;
+    margin-top: 5px;
+}

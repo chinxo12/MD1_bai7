@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="caculator.css">
+</head>
+<body>
+
+    <input  id="hienThi" style="border-collapse:collapse">
+    <table id="bang">
+        <tr>
+            <td> <button onclick="so('1')">1</button></td>
+            <td> <button onclick="so('2')">2</button></td>
+            <td> <button onclick="so('3')">3</button></td>
+            <td> <button  onclick="so('+')">+</button></td>
+        </tr>
+        <tr>
+            <td> <button onclick="so('4')">4</button></td>
+            <td> <button onclick="so('5')">5</button></td>
+            <td> <button onclick="so('6')">6</button></td>
+            <td> <button  onclick="so('-')">-</button></td>
+        </tr>
+        <tr>
+            <td> <button onclick="so('7')">7</button></td>
+            <td> <button onclick="so('8')">8</button></td>
+            <td> <button onclick="so('9')">9</button></td>
+            <td> <button  onclick="so('*')">x</button></td>
+        </tr>
+        <tr>
+            <td> <button onclick="so('reset')">AC</button></td>
+            <td> <button onclick="so('0')">0</button></td>
+            <Td><button onclick="ketQua()">=</button></Td>
+            <td> <button  onclick="so('/')">/</button></td>
+        </tr>
+    </table>
+
+<script>
+    function so (a) {
+        document.getElementById('hienThi').value+=a;
+    }
+    function reset() {
+        document.getElementById('hienThi').value=''
+    }
+    function ketQua() {
+        let input =document.getElementById('hienThi').value;
+        let ketQua = eval(input);
+        document.getElementById('hienThi').value = ketQua
+    }
+</script>
+
+</body>
+</html>

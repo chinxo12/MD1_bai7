@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let weight = +prompt('Nhập số cân nặng của bạn');
+  let height = +prompt('Nhập chiều cao của bạn');
+  let bmi = weight/ (Math.pow(height,2))
+  if (bmi < 18) {
+      document.write("gầy")
+  }else if (bmi<25.0){
+      document.write("Bình thường")
+  }else  if (bmi < 30) {
+      document.write("Thừa cân rồi giảm béo đê!!")
+  }else
+      document.write("Con lợn không đuôi!!")
+
+</script>
+
+</body>
+</html>

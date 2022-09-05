@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    h3 {
+      background-color: red;
+      text-align: center;
+    }
+    input[id="cb1"] {
+      /*display: inline-block;*/
+      outline: 2px solid #c00;
+    }
+    fieldset {
+      border: 20px solid aquamarine;
+    }
+
+  </style>
+
+
+</head>
+<body>
+<form action="rrr.html" method="get">
+    <fieldset  style="'border: 30px'; width:350px" >
+      <h3>Sở thích của bạn </h3>
+      <lable class="ten">Họ và tên: </lable>
+      <input class="name" type="text"><br>
+      <lable class="email">Email:   </lable>
+      <input type="text"><br>
+
+      <table class="table">
+        <tr>
+          <td><labe class="hobby">Sở thích: </labe></td>
+          <td><input id="cb1" type="checkbox" name="vihicle1" value="Xem phim">Xem phim </td>
+          <td><input id="cb1" type="checkbox" name="vihicle1" value="Thể thao">thể thao</td>
+          <td><input id="cb1" type="checkbox" name="vihicle1" value="Đọc sách">Đọc sách</td>
+        </tr>
+        <tr>
+          <td rowspan="2"></td>
+          <td> <input id="cb1" type="checkbox" name="vihicle1" value="Nghe nhạc">nghe nhạc <br>
+          <td><input id="cb1"  type="checkbox" name="vihicle1" value="lướt web">Lướt web</td>
+          <td><input id="cb1" type="checkbox" name="vihicle1" value="Chơi game">chơi game</td>
+        </tr>
+        <tr>
+          <td rowspan="1"></td>
+          <td> <input id="cb1" type="checkbox" name="vihicle1" value="Du lịch">Du lịch
+        </tr>
+
+
+      </table>
+
+
+
+
+
+
+
+
+
+      <input  type="submit"value="Gửi thông tin">
+      <input type="reset">
+    </fieldset>
+
+
+</form>
+
+</body>
+</html>

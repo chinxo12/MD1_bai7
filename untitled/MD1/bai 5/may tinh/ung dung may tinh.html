@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="ungdungmaytinhjs.js"></script>
+  <link rel="stylesheet" href="maytinh.css">
+  <style>
+    table {
+      width: 500px;
+    }
+  </style>
+</head>
+<body>
+<div id="Main">
+    <input  id="hienThi" style="border-collapse:collapse">
+
+    <table>
+        <tr>
+        <td><button>Rad</button></td>
+        <td><button>⌨</button> </td>
+        <td><button>x!</button></td>
+        <td><button onclick="number(' (')">(</button></td>
+        <td><button onclick="number(')')">)</button></td>
+        <td><button onclick="number('% ')">%</button></td>
+        <td><button onclick="reset('AC')">AC</button></td>
+        </tr>
+        <tr>
+            <td><button>lnv</button></td>
+            <td><button>sin</button></td>
+            <td><button>ln</button></td>
+            <Td><button onclick="number('7')">7</button></Td>
+            <Td><button onclick="number('8')">8</button></Td>
+            <Td><button onclick="number('9')">9</button></Td>
+            <td><button  onclick="number('/')">&#58</button></td>
+        </tr>
+        <tr>
+            <td><button>&#960;</button></td>
+            <td><button>cos</button></td>
+            <td><button>log</button></td>
+            <Td><button onclick="number('4')">4</button></Td>
+            <Td><button onclick="number('5')">5</button></Td>
+            <Td><button onclick="number('6')">6</button></Td>
+            <td><button id="nhan" onclick="number('*')">x</button></td>
+        </tr>
+        <tr>
+            <td><button>e</button></td>
+            <td><button>tan</button></td>
+            <td><button>&#8730</button></td>
+            <Td><button onclick="number('1')">1</button></Td>
+            <td> <button onclick="number('2')">2</button></td>
+            <td ><button  onclick="number('3')">3</button></td>
+            <Td><button onclick="number('-')">-</button></Td>
+        </tr>
+        <tr>
+            <td><button>Ans</button></td>
+            <td><button>EXP</button></td>
+            <Td ><button onclick="binhPhuong()">X&sup2;</button></Td>
+            <td class="number"><button  onclick="number('0')">0</button></td>
+            <td><button onclick="number('.')">.</button></td>
+            <td><button  onclick="ketQua()">=</button></td>
+            <td><button id="cong" onclick="number('+')">+</button></td>
+        </tr>
+    </table>
+</div>
+<script>
+    function number(a){
+        document.getElementById('hienThi').value+=a
+    }
+    function reset() {
+        document.getElementById('hienThi').value=''
+    }
+    function ketQua() {
+        let input =document.getElementById('hienThi').value;
+        let ketQua = eval(input)
+        document.getElementById('hienThi').value =ketQua
+    }
+    function canBac2() {
+        let sqrt=Math.sqrt(+document.getElementById('hienthi').value);
+        document.getElementById('hienthi').value=sqrt
+    }
+    function binhPhuong(){
+        let a = document.getElementById('hienthi').value;
+        let bp=Math.pow(a,2);
+        document.getElementById('hienthi').value=bp
+    }
+    function lapPhuong(){
+        let b = document.getElementById('hienthi').value;
+        let lp = Math.pow(b,3)
+        document.getElementById('hienthi').value=lp
+    }
+    function sinCode(){
+        let c = document.getElementById('hienthi').value;
+        let sin = Math.sin(c*Math.PI/180)
+        document.getElementById('hienthi').value=sin
+    }
+</script>
+
+</body>
+</html>

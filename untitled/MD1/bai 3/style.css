@@ -1,0 +1,39 @@
+.email{
+    margin-right: 24px;
+    color: blue;
+    margin-bottom: 10px;
+
+}
+.name{
+    margin-bottom: 10px;
+
+}
+.check {
+    margin-right: 30px;
+    color: #d61b06;
+}
+.hobby {
+    color: blue;
+    margin-top: 20px;
+}
+.ten {
+    color: blue;
+}
+.check {
+    border-color: red  ;
+
+}
+/*input[type="text"]*/
+/*{*/
+/*    border-radius: 10px;*/
+/*    background-color:#ff4456;*/
+/*    color: blue;*/
+/*    border-color:#ff4456 ;*/
+/*    width:100%;*/
+/*}*/
+#test {
+    border: #d61b06;
+}
+.table {
+    margin-right: 15px;
+}

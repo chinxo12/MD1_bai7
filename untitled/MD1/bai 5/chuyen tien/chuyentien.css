@@ -1,0 +1,6 @@
+#main table {
+    width: 700px;
+}
+#main input[type="Number"]:hover {
+    background-color: green;
+}

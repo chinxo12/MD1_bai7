@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+  <img id="anh1" src="https://dongchinh-game-puzzle.netlify.app/image/Gau%201.jpg" height="100" width="600" onclick="changeImg1()"><br>
+  <img id="anh2" src="https://dongchinh-game-puzzle.netlify.app/image/Gau%202.jpg" height="100" width="600" onclick="changeImg2()"><br>
+  <img id="anh3" src="https://dongchinh-game-puzzle.netlify.app/image/Gau%203.jpg" height="100" width="600" onclick="changeImg3()"><br>
+
+</div>
+<script>
+  let count1 = 0;
+  let count2 = 1;
+  let count3 = 2;
+  let img1 = document.getElementById('anh1');
+  let img2 = document.getElementById('anh2');
+  let img3 = document.getElementById('anh3');
+  function changeImg1 () {
+    count1++;
+    if (count1 == 1){
+      img1.src = 'https://dongchinh-game-puzzle.netlify.app/image/Cat%201.jpg'
+    }else if (count1 == 2){
+      img1.src = 'https://dongchinh-game-puzzle.netlify.app/image/Khi%201.jpg'
+    }else {
+      count1 = 0;
+      img1.src = 'https://dongchinh-game-puzzle.netlify.app/image/Gau%201.jpg'
+    }
+    checkShadow()
+  }
+  function changeImg2 () {
+    count2++;
+    if (count2==1){
+      img2.src = 'https://dongchinh-game-puzzle.netlify.app/image/Cat%202.jpg'
+    }else if (count2==2){
+      img2.src = 'https://dongchinh-game-puzzle.netlify.app/image/Khi%202.jpg'
+    }else   {
+      count2 = 0;
+      img2.src = ' https://dongchinh-game-puzzle.netlify.app/image/Gau%202.jpg'
+    }
+    checkShadow()
+  }
+  function changeImg3 ()  {
+    count3++;
+    if (count3 == 1){
+      img3.src = 'https://dongchinh-game-puzzle.netlify.app/image/Cat%203.jpg'
+    }else if (count3 == 2){
+      img3.src = 'https://dongchinh-game-puzzle.netlify.app/image/Khi%203.jpg'
+    }else {
+      count3 = 0;
+      img3.src = 'https://dongchinh-game-puzzle.netlify.app/image/Gau%203.jpg'
+    }
+    checkShadow()
+  }
+function checkShadow () {
+    if (count1==count2 && count2==count3) {
+
+      img1.style.boxShadow = 'red 4px 4px 9px'
+      img2.style.boxShadow = 'red 4px 4px 9px'
+      img3.style.boxShadow = 'red 4px 4px 9px'
+    }else {
+      img1.style.boxShadow = 'blue 4px 4px 9px'
+      img2.style.boxShadow = 'blue 4px 4px 9px'
+      img3.style.boxShadow = 'blue 4px 4px 9px'
+    }
+
+}
+</script>
+
+</body>
+</html>

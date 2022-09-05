@@ -1,0 +1,21 @@
+
+#main {
+    width: 500px;
+    border: 10px solid;
+    /*text-align: center;*/
+    background-color:aliceblue ;
+    position: center;
+    border: 10px solid color()  ;
+
+}
+
+button {
+    width: 60px;
+    margin: 5px 3px;
+}
+#ketQua {
+    text-align: right;
+    width: 300px;
+    height: 30px;
+    margin-left: 184px;
+}

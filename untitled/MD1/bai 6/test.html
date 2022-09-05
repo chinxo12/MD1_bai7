@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    div {
+      width: 380px;
+      text-align: center;
+      background-image: url("https://scontent.xx.fbcdn.net/v/t39.30808-6/300679858_2298444593648363_528402170125126285_n.jpg?stp=dst-jpg_s261x260&_nc_cat=103&ccb=1-7&_nc_sid=dbeb18&_nc_ohc=n5XjNMQMVPYAX-Gim4_&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=00_AT9kTrAoYkTbxno7aOKnPFOXEqHWngm62rSpGbMmVe4fTw&oe=6314220D");
+      font-family: Arial;
+    }
+    h2  {
+      padding: 5px ;
+      background-color: slategray;
+    }
+    #nhap {
+      text-align: left;
+    }
+    #nhap label {
+      width: 110px;
+      display: block;
+      float: left;
+      padding-left: 8px;
+      margin: 1px 2px;
+      color: red;
+      font-weight: boder;
+    }
+    #ureName {
+      margin-bottom: 10px;
+    }
+    #dangNhap {
+      margin-left: 15px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    #ureName:hover {
+      background-color: lightcoral;
+    }
+    #matKhau:hover{
+      background-color: mediumturquoise;
+    }
+  </style>
+</head>
+<body>
+<div style="border: 1px solid" >
+  <h2>Hội thiên địa</h2>
+  <div id="nhap">
+    <label> Tên đăng nhập</label>
+    <input type="text" id="ureName"> <br>
+    <label >Mật khẩu</label>
+    <input type="password" id="matKhau"> <br>
+    <input type="button" onclick="ketQua()" id="dangNhap" value="Đăng nhập">
+
+  </div>
+</div>
+</body>
+<script>
+  function ketQua() {
+
+    let useName = document.getElementById('ureName').value;
+    let passWord = document.getElementById('matKhau').value;
+    console.log(useName)
+    if (useName == 'admin') {
+      if (passWord === 'admin') {
+        // alert('wellcome to thiên địa hội!!!');
+        document.write('<h1>Wellcome to thiên địa hội!!!');
+        // if (passWord) {
+        //   alert('canceld');
+        // } else {
+        //   alert('Mày là thằng nào!!!')
+        // }
+      } else {
+        alert('sai pass rồi định hack nick à!!!!')
+      }
+
+    } else {
+      alert('liên hệ admin đăng ký nick đê!! ')
+    }
+  }
+
+</script>
+</body>
+
+</html>
